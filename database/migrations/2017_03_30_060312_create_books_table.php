@@ -21,7 +21,7 @@ class CreateBooksTable extends Migration
             $table->string('abstract', 280)->comment('书籍摘要');
             $table->string('author', 50)->comment('书籍作者');
             $table->text('keyword')->comment('书籍关键词');
-            $table->boolean('isMember')->comment('是否会员可见 1-是, 0-否')->unique();
+            $table->boolean('isMember')->comment('是否会员可见 1-是, 0-否');
             $table->boolean('isNew')->comment('是否新书上架 1-是, 0-否');
             $table->boolean('isHot')->comment('是否热门书籍 1-是, 0-否');
             $table->integer('weight')->comment('书籍权重')->unsigned(true)->default(1);

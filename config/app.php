@@ -176,6 +176,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        iscms\Alisms\AlidayuServiceProvider::class,
+        HyanCat\ShortMessenger\SmsServiceProvider::class,
 
         //jwt
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class
@@ -229,7 +231,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
-        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class
+        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+        'SMS' => HyanCat\ShortMessenger\SmsServiceFacade::class,
 
     ],
 

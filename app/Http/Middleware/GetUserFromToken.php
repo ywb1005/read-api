@@ -58,6 +58,7 @@ class GetUserFromToken
             ], $e->getStatusCode());
 
         }
+        $request->user = $user;
         return $next($request);
     }
 }
