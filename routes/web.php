@@ -11,9 +11,9 @@
 |
 */
 //
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 
 //api路由组不需要鉴权的
 Route::group(['prefix' => '/admin','middleware' => ['api', 'cors']], function ($route) {
