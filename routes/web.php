@@ -41,4 +41,5 @@ Route::group(['prefix' => '/admin', 'middleware' => ['api', 'cors', 'jwt.api.aut
     $route->post('/book/edit/{id}', 'BooksController@updateBook');
     $route->post('/book/{bookId}/section/edit/{id}', 'BooksController@updateSection');
     $route->get('/book/section/info/{id}', 'BooksController@getSectionById');
+    $route->get('/option/download/list', 'OptionController@getDownloadList');
 });
