@@ -15,8 +15,8 @@ return [
 
         'aliyun' => [
             'region'     => 'cn-hangzhou',
-            'access_id'  => env('ALIYUN_SMS_ACCESS_ID', 'LTAIS3OWhRUo1dWN'),
-            'access_key' => env('ALIYUN_SMS_ACCESS_KEY', 'k6Hsk2rvkWtXcEjI4PDfz9VQAnfXcm'),
+            'access_id'  => env('ALIYUN_SMS_ACCESS_ID', ''),
+            'access_key' => env('ALIYUN_SMS_ACCESS_KEY', ''),
         ],
 
         'sendcloud' => [
